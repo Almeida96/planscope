@@ -1,0 +1,43 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Sort",
+      "Startup Cost": 120,
+      "Total Cost": 145,
+      "Plan Rows": 1000,
+      "Plan Width": 64,
+      "Actual Startup Time": 32,
+      "Actual Total Time": 39,
+      "Actual Rows": 1000,
+      "Actual Loops": 1,
+      "Sort Method": "quicksort",
+      "Sort Space Used": 256,
+      "Sort Space Type": "Memory",
+      "Shared Hit Blocks": 900,
+      "Shared Read Blocks": 30,
+      "Temp Written Blocks": 0,
+      "Plans": [
+        {
+          "Node Type": "Index Scan",
+          "Parent Relationship": "Outer",
+          "Relation Name": "orders",
+          "Alias": "orders",
+          "Index Name": "orders_account_idx",
+          "Startup Cost": 0.4,
+          "Total Cost": 100,
+          "Plan Rows": 1000,
+          "Plan Width": 64,
+          "Actual Startup Time": 0.1,
+          "Actual Total Time": 28,
+          "Actual Rows": 1000,
+          "Actual Loops": 1,
+          "Rows Removed by Filter": 50,
+          "Shared Hit Blocks": 900,
+          "Shared Read Blocks": 30
+        }
+      ]
+    },
+    "Planning Time": 0.6,
+    "Execution Time": 42
+  }
+]
